@@ -6,5 +6,9 @@ app.get("/", function (req, res) {
 	res.send("<html><body><h1>Express</h1></body></html>");
 });
 
+app.get('/api/users', function (req, res) {
+    res.send('{"status": "0"}');
+});
+
 var server = http.createServer(app);
 server.listen(3000);
